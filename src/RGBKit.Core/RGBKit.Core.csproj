@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>RGBKit</Authors>
+    <Product>RGBKit</Product>
+    <Description>The core RGB Kit components.</Description>
+    <PackageProjectUrl>https://github.com/rgbkit</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/rgbkit/rgbkit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>rgb, rgbkit, sdk</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\img\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
