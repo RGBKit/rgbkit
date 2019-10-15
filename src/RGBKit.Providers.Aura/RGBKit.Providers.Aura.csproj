@@ -14,12 +14,12 @@
     <RepositoryUrl>https://github.com/rgbkit/rgbkit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, aura, asus</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Uprev</PackageReleaseNotes>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RGBKit.Core" Version="1.0.1" />
+    <PackageReference Include="RGBKit.Core" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>

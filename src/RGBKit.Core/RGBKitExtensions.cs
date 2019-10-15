@@ -15,7 +15,7 @@ namespace RGBKit.Core
         /// <param name="builder">The host builder</param>
         /// <param name="auraConnectDelegate">The action to execute upon configuring</param>
         /// <returns>The original host builder for chaining</returns>
-        public static IHostBuilder ConfigureAuraConnect(this IHostBuilder builder, Action<IRGBKitService> auraConnectDelegate)
+        public static IHostBuilder ConfigureRGBKit(this IHostBuilder builder, Action<IRGBKitService> auraConnectDelegate)
         {
             var auraConnect = new RGBKitService();
 

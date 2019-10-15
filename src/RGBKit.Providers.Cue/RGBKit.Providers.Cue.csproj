@@ -14,13 +14,13 @@
     <RepositoryUrl>https://github.com/rgbkit/rgbkit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, cue, corsair</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Uprev</PackageReleaseNotes>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CUESDK.NET" Version="3.0.234.3" />
-    <PackageReference Include="RGBKit.Core" Version="1.0.1" />
+    <PackageReference Include="RGBKit.Core" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>
