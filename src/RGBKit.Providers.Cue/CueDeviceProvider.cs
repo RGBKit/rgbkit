@@ -42,7 +42,7 @@ namespace RGBKit.Providers.Cue
         {
             PerformHealthCheck();
 
-            Thread.Sleep(30000);
+            Thread.Sleep(1000);
 
             for (int i = 0; i < CUESDK.CorsairGetDeviceCount(); i++)
             {
@@ -59,7 +59,7 @@ namespace RGBKit.Providers.Cue
 
             while (!cueRunning)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 cueRunning = Process.GetProcessesByName("iCUE").Length != 0;
             }
 
@@ -70,7 +70,7 @@ namespace RGBKit.Providers.Cue
                 error == CorsairError.CE_ProtocolHandshakeMissing)
             {
                 CUESDK.CorsairPerformProtocolHandshake();
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 error = CUESDK.CorsairGetLastError();
             }
         }
