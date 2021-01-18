@@ -42,7 +42,7 @@ namespace RGBKit.Providers.Cue
         {
             PerformHealthCheck();
 
-            Thread.Sleep(30000);
+            Thread.Sleep(10000);
 
             for (int i = 0; i < CUESDK.CorsairGetDeviceCount(); i++)
             {
