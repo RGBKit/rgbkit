@@ -9,17 +9,19 @@
     <Description>The RGB Kit ASUS Aura provider.</Description>
     <Copyright>RGBKit</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/rgbkit</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/RGBKit</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/rgbkit/rgbkit</RepositoryUrl>
+    <RepositoryUrl>https://github.com/RGBKit/RGBKit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, aura, asus</PackageTags>
-    <PackageReleaseNotes>Uprev</PackageReleaseNotes>
-    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Adjusted thread sleeps, faster startup times</PackageReleaseNotes>
+    <Version>1.1.1</Version>
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RGBKit.Core" Version="1.0.2" />
+    <PackageReference Include="RGBKit.Core" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>

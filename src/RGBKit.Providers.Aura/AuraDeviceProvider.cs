@@ -72,7 +72,7 @@ namespace RGBKit.Providers.Aura
 
             while (!lightingServiceRunning)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 lightingServiceRunning = Process.GetProcessesByName("LightingService").Length != 0;
             }
         }
