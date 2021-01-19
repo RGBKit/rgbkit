@@ -15,13 +15,13 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, aura, asus</PackageTags>
     <PackageReleaseNotes>Adjusted thread sleeps, faster startup times</PackageReleaseNotes>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RGBKit.Core" Version="1.1.1" />
+    <PackageReference Include="RGBKit.Core" Version="1.1.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -13,7 +13,7 @@
     <PackageTags>rgb, rgbkit, sdk</PackageTags>
     <PackageReleaseNotes>Health check timer changed to 10s</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
