@@ -20,6 +20,11 @@ namespace RGBKit.Providers.Cue
         public IEnumerable<IDeviceLight> Lights { get => GetLights(); }
 
         /// <summary>
+        /// The number of lights on the device
+        /// </summary>
+        public int NumberOfLights { get; }
+
+        /// <summary>
         /// The device index
         /// </summary>
         private int _deviceIndex;
@@ -51,6 +56,8 @@ namespace RGBKit.Providers.Cue
             {
                 _lights.Add(new CueDeviceLight(new CorsairLedColor() { ledId = position.ledId }));
             }
+
+            NumberOfLights = positions.numberOfLeds;
         }
 
         /// <summary>
@@ -58,15 +65,18 @@ namespace RGBKit.Providers.Cue
         /// </summary>
         public void ApplyLights()
         {
-            var buffer = new CorsairLedColor[_lights.Count];
-
-            for (int i = 0; i < _lights.Count; i++)
+            if (NumberOfLights > 0)
             {
-                buffer[i] = _lights[i]._deviceLight;
-            }
+                var buffer = new CorsairLedColor[_lights.Count];
 
-            CUESDK.CorsairSetLedsColorsBufferByDeviceIndex(_deviceIndex, buffer.Length, buffer);
-            CUESDK.CorsairSetLedsColorsFlushBuffer();
+                for (int i = 0; i < _lights.Count; i++)
+                {
+                    buffer[i] = _lights[i]._deviceLight;
+                }
+
+                CUESDK.CorsairSetLedsColorsBufferByDeviceIndex(_deviceIndex, buffer.Length, buffer);
+                CUESDK.CorsairSetLedsColorsFlushBuffer();
+            }
         }
 
         /// <summary>

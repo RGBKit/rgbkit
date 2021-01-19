@@ -14,14 +14,14 @@
     <RepositoryUrl>https://github.com/RGBKit/RGBKit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, aura, asus</PackageTags>
-    <PackageReleaseNotes>Adjusted thread sleeps, faster startup times</PackageReleaseNotes>
-    <Version>1.1.2</Version>
+    <PackageReleaseNotes>Added device light led &gt; 0 check</PackageReleaseNotes>
+    <Version>1.2.0</Version>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RGBKit.Core" Version="1.1.2" />
+    <PackageReference Include="RGBKit.Core" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>

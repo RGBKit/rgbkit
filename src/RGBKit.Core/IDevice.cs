@@ -18,6 +18,11 @@ namespace RGBKit.Core
         IEnumerable<IDeviceLight> Lights { get; }
 
         /// <summary>
+        /// The number of lights on the device
+        /// </summary>
+        int NumberOfLights { get; }
+
+        /// <summary>
         /// Applies light changes to the device
         /// </summary>
         void ApplyLights();

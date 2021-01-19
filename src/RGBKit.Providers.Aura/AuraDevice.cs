@@ -20,6 +20,11 @@ namespace RGBKit.Providers.Aura
         public IEnumerable<IDeviceLight> Lights { get => _lights; }
 
         /// <summary>
+        /// The number of lights on the device
+        /// </summary>
+        public int NumberOfLights { get; }
+
+        /// <summary>
         /// The device
         /// </summary>
         private IAuraSyncDevice _device;
@@ -43,6 +48,8 @@ namespace RGBKit.Providers.Aura
             {
                 _lights.Add(new AuraDeviceLight(light));
             }
+
+            NumberOfLights = _device.Lights.Count;
         }
 
         /// <summary>
@@ -50,7 +57,10 @@ namespace RGBKit.Providers.Aura
         /// </summary>
         public void ApplyLights()
         {
-            _device.Apply();
+            if (NumberOfLights > 0)
+            {
+                _device.Apply();
+            }
         }
     }
 }
