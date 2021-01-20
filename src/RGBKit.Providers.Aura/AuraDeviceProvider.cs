@@ -55,7 +55,7 @@ namespace RGBKit.Providers.Aura
         {
             PerformHealthCheck();
 
-            Thread.Sleep(10000);
+            Thread.Sleep(30000);
 
             foreach (IAuraSyncDevice device in _sdk.Enumerate(0))
             {
@@ -72,7 +72,7 @@ namespace RGBKit.Providers.Aura
 
             while (!lightingServiceRunning)
             {
-                Thread.Sleep(100);
+                Thread.Sleep(1000);
                 lightingServiceRunning = Process.GetProcessesByName("LightingService").Length != 0;
             }
         }

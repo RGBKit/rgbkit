@@ -30,7 +30,7 @@ namespace RGBKit.Core
         public RGBKitService()
         {
             _deviceProviders = new List<IDeviceProvider>();
-            _healthCheckTimer = new Timer(10000);
+            _healthCheckTimer = new Timer(15000);
             _healthCheckTimer.Elapsed += HealthCheckTimer_Elapsed;
         }
 

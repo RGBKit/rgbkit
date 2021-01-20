@@ -14,14 +14,14 @@
     <RepositoryUrl>https://github.com/RGBKit/RGBKit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk, aura, asus</PackageTags>
-    <PackageReleaseNotes>Added device light led &gt; 0 check</PackageReleaseNotes>
-    <Version>1.2.0</Version>
+    <PackageReleaseNotes>Initialization fixes</PackageReleaseNotes>
+    <Version>1.2.1</Version>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RGBKit.Core" Version="1.2.0" />
+    <PackageReference Include="RGBKit.Core" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>

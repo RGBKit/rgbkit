@@ -11,9 +11,9 @@
     <RepositoryUrl>https://github.com/RGBKit/RGBKit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>rgb, rgbkit, sdk</PackageTags>
-    <PackageReleaseNotes>Added device light led &gt; 0 check</PackageReleaseNotes>
+    <PackageReleaseNotes>Initialization fixes</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
