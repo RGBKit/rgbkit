@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="hidlibrary" Version="3.3.28" />
+    <PackageReference Include="NZXTSharp" Version="2.1.3" />
+    <PackageReference Include="RGBKit.Core" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
